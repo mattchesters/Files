@@ -67,6 +67,13 @@
                     Header="Acrylic sidebar"
                     HeaderTemplate="{StaticResource CustomHeaderStyle}"
                     IsOn="{x:Bind AppSettings.AcrylicEnabled, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource BoolNegationConverter}}" />
+                
+                <ToggleSwitch
+                    x:Name="HideDriveLettersSwitch"
+                    x:Uid="SettingsAppearanceHideDriveLetters"
+                    Header="Hide Drive Letters"
+                    HeaderTemplate="{StaticResource CustomHeaderStyle}"
+                    IsOn="{x:Bind AppSettings.DriveLettersHidden, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource BoolNegationConverter}}" />
             </StackPanel>
         </ScrollViewer>
     </Grid>
